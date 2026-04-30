@@ -47,23 +47,17 @@ ai-sentiment-analyzer/
 git clone https://github.com/Asifabegum18/ai-sentiment-analyzer.git
 ```
 
----
-
 ### 2️⃣ Navigate to Project Folder
 
 ```bash
 cd ai-sentiment-analyzer
 ```
 
----
-
 ### 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
-
----
 
 ### 4️⃣ Download TextBlob Data
 
@@ -93,14 +87,13 @@ streamlit run app.py
 
 ## 🎯 Project Objective
 
-This project analyzes user-entered text and predicts emotional sentiment using NLP techniques. It helps understand customer opinions, reviews, and feedback automatically.
+This project analyzes user-entered text and predicts emotional sentiment using NLP techniques.
 
 ---
 
 ## 🌐 Deployment
 
 The application can be deployed using:
-
 - Streamlit Community Cloud
 - GitHub
 
@@ -109,6 +102,6 @@ The application can be deployed using:
 
 - Voice sentiment analysis
 - Deep Learning integration
-- HuggingFace Transformer models
+- Transformer models
 - Multilingual sentiment analysis
 - Dashboard analytics

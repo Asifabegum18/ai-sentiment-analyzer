@@ -1,20 +1,16 @@
 from textblob import TextBlob
 
-while True:
-    text = input("\nEnter text (or type 'exit'): ")
-
-    if text.lower() == "exit":
-        print("Exiting...")
-        break
-
+def analyze_sentiment(text):
     analysis = TextBlob(text)
-    polarity = analysis.sentiment.polarity
 
-    print(f"Polarity Score: {polarity}")
+    polarity = analysis.sentiment.polarity
+    subjectivity = analysis.sentiment.subjectivity
 
     if polarity > 0:
-        print("Sentiment: Positive 😊")
+        sentiment = "Positive 😊"
     elif polarity < 0:
-        print("Sentiment: Negative 😡")
+        sentiment = "Negative 😡"
     else:
-        print("Sentiment: Neutral 😐")
+        sentiment = "Neutral 😐"
+
+    return sentiment, polarity, subjectivity
